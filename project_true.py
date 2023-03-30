@@ -14,7 +14,7 @@ from plotly.subplots import make_subplots
 import numpy as np
 import pandas as pd
 
-pars_oblasti = pd.read_csv(r"C:\Users\liast\Downloads\pars_oblasti_RF_clean_true.csv")
+pars_oblasti = pd.read_csv("https://github.com/LiaStorm/project/blob/8025e6ac73a5a8db4fcc213079d9f52eced676cf/pars_oblasti_RF_clean_true.csv")
 
 df = px.data.gapminder()
 years = df.year.unique()
@@ -195,16 +195,16 @@ dropdown = html.Div(
     className="mb-4",
 )
 map_mean_salary = html.Div(children=[
-        html.Iframe(id='map1', srcDoc=open(r"C:\Users\liast\Downloads\SalaryMean.html", 'r').read(), width = "100%", height = "600")
+        html.Iframe(id='map1', srcDoc=open("https://github.com/LiaStorm/project/blob/8025e6ac73a5a8db4fcc213079d9f52eced676cf/MeanSalary.html", 'r').read(), width = "100%", height = "600")
 ], style={'padding': 10, 'flex': 1})
 map_count_prof = html.Div(children=[
-        html.Iframe(id='map2', srcDoc=open(r"C:\Users\liast\Downloads\CountRoles.html", 'r').read(), width = "100%", height = "600")
+        html.Iframe(id='map2', srcDoc=open("https://github.com/LiaStorm/project/blob/8025e6ac73a5a8db4fcc213079d9f52eced676cf/CountRoles.html", 'r').read(), width = "100%", height = "600")
 ], style={'padding': 10, 'flex': 1})
 map_oblas_prof = html.Div(children=[
-        html.Iframe(id='map3', srcDoc=open(r"C:\Users\liast\Downloads\OblastiRoles.html", 'r').read(), width = "100%", height = "600")
+        html.Iframe(id='map3', srcDoc=open("https://github.com/LiaStorm/project/blob/8025e6ac73a5a8db4fcc213079d9f52eced676cf/OblastiRoles.html", 'r').read(), width = "100%", height = "600")
 ], style={'padding': 10, 'flex': 1})
 map_prof = html.Div(children=[
-        html.Iframe(id='map4', srcDoc=open(r"C:\Users\liast\Downloads\Roles.html", 'r').read(), width = "100%", height = "600")
+        html.Iframe(id='map4', srcDoc=open("https://github.com/LiaStorm/project/blob/8025e6ac73a5a8db4fcc213079d9f52eced676cf/Roles.html", 'r').read(), width = "100%", height = "600")
 ], style={'padding': 10, 'flex': 1})
 
 checklist = html.Div(
@@ -354,7 +354,7 @@ import matplotlib.pyplot as plt
 
 
 from PIL import Image, ImageDraw
-img = Image.open(r"C:\Users\liast\Downloads\freqDist.png")
+img = Image.open("https://github.com/LiaStorm/project/blob/8025e6ac73a5a8db4fcc213079d9f52eced676cf/freqDist.png")
 
 with BytesIO() as buffer:
     img.save(buffer, 'png')
