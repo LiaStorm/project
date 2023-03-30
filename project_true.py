@@ -16,9 +16,9 @@ import pandas as pd
 
 pars_oblasti = pd.read_csv("https://github.com/LiaStorm/project/blob/8025e6ac73a5a8db4fcc213079d9f52eced676cf/pars_oblasti_RF_clean_true.csv", on_bad_lines='skip')
 
-df = px.data.gapminder()
-years = df.year.unique()
-years2 = list(pars_oblasti["published_at_date"]).sort()
+# df = px.data.gapminder()
+# years = df.year.unique()
+# years2 = list(pars_oblasti["published_at_date"]).sort()
 continents =pars_oblasti["OblastiRF"].unique()
 
 
