@@ -195,16 +195,16 @@ dropdown = html.Div(
     className="mb-4",
 )
 map_mean_salary = html.Div(children=[
-        html.Iframe(id='map1', srcDoc=open("https://github.com/LiaStorm/project/blob/8025e6ac73a5a8db4fcc213079d9f52eced676cf/MeanSalary.html", 'r').read(), width = "100%", height = "600")
+        html.Iframe(id='map1', srcDoc=open("https://raw.githubusercontent.com/LiaStorm/project/main/MeanSalary.html", 'r').read(), width = "100%", height = "600")
 ], style={'padding': 10, 'flex': 1})
 map_count_prof = html.Div(children=[
         html.Iframe(id='map2', srcDoc=open("https://raw.githubusercontent.com/LiaStorm/project/main/CountRoles.html", 'r').read(), width = "100%", height = "600")
 ], style={'padding': 10, 'flex': 1})
 map_oblas_prof = html.Div(children=[
-        html.Iframe(id='map3', srcDoc=open("https://github.com/LiaStorm/project/blob/8025e6ac73a5a8db4fcc213079d9f52eced676cf/OblastiRoles.html", 'r').read(), width = "100%", height = "600")
+        html.Iframe(id='map3', srcDoc=open("https://raw.githubusercontent.com/LiaStorm/project/53af2811eec58a0d44bfb3710f51421408cb8d9b/OblastiRoles.html", 'r').read(), width = "100%", height = "600")
 ], style={'padding': 10, 'flex': 1})
 map_prof = html.Div(children=[
-        html.Iframe(id='map4', srcDoc=open("https://github.com/LiaStorm/project/blob/8025e6ac73a5a8db4fcc213079d9f52eced676cf/Roles.html", 'r').read(), width = "100%", height = "600")
+        html.Iframe(id='map4', srcDoc=open("https://raw.githubusercontent.com/LiaStorm/project/53af2811eec58a0d44bfb3710f51421408cb8d9b/Roles.html", 'r').read(), width = "100%", height = "600")
 ], style={'padding': 10, 'flex': 1})
 
 checklist = html.Div(
@@ -354,7 +354,7 @@ import matplotlib.pyplot as plt
 
 
 from PIL import Image, ImageDraw
-img = Image.open("https://github.com/LiaStorm/project/blob/8025e6ac73a5a8db4fcc213079d9f52eced676cf/freqDist.png")
+img = Image.open("freqDist.png")
 
 with BytesIO() as buffer:
     img.save(buffer, 'png')
