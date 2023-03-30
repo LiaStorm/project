@@ -46,21 +46,21 @@ table1 = html.Div(
     ),
     className="dbc-row-selectable",
 )
-table2 = html.Div(
-    dash_table.DataTable(
-        id="table2",
-        columns=[{"name": i, "id": i, "deletable": True} for i in df.columns],
-        data=df.to_dict("records"),
-        page_size=10,
-        editable=True,
-        cell_selectable=True,
-        filter_action="native",
-        sort_action="native",
-        style_table={"overflowX": "auto"},
-        row_selectable="multi",
-    ),
-    className="dbc-row-selectable",
-)
+# table2 = html.Div(
+#     dash_table.DataTable(
+#         id="table2",
+#         columns=[{"name": i, "id": i, "deletable": True} for i in df.columns],
+#         data=df.to_dict("records"),
+#         page_size=10,
+#         editable=True,
+#         cell_selectable=True,
+#         filter_action="native",
+#         sort_action="native",
+#         style_table={"overflowX": "auto"},
+#         row_selectable="multi",
+#     ),
+#     className="dbc-row-selectable",
+# )
 data_des = pars_oblasti.describe()
 
 table55 = html.Div(
