@@ -14,7 +14,7 @@ from plotly.subplots import make_subplots
 import numpy as np
 import pandas as pd
 
-pars_oblasti = pd.read_csv("pars_oblasti_RF_clean_true.csv", sep=",", engine='python', on_bad_lines='skip')
+pars_oblasti = pd.read_csv("https://raw.githubusercontent.com/LiaStorm/project/main/pars_oblasti_RF_clean_true.csv", sep=",", engine='python', on_bad_lines='skip')
 
 # df = px.data.gapminder()
 # years = df.year.unique()
@@ -198,7 +198,7 @@ map_mean_salary = html.Div(children=[
         html.Iframe(id='map1', srcDoc=open("https://github.com/LiaStorm/project/blob/8025e6ac73a5a8db4fcc213079d9f52eced676cf/MeanSalary.html", 'r').read(), width = "100%", height = "600")
 ], style={'padding': 10, 'flex': 1})
 map_count_prof = html.Div(children=[
-        html.Iframe(id='map2', srcDoc=open("https://github.com/LiaStorm/project/blob/8025e6ac73a5a8db4fcc213079d9f52eced676cf/CountRoles.html", 'r').read(), width = "100%", height = "600")
+        html.Iframe(id='map2', srcDoc=open("https://raw.githubusercontent.com/LiaStorm/project/main/CountRoles.html", 'r').read(), width = "100%", height = "600")
 ], style={'padding': 10, 'flex': 1})
 map_oblas_prof = html.Div(children=[
         html.Iframe(id='map3', srcDoc=open("https://github.com/LiaStorm/project/blob/8025e6ac73a5a8db4fcc213079d9f52eced676cf/OblastiRoles.html", 'r').read(), width = "100%", height = "600")
