@@ -335,9 +335,9 @@ for text in text_punct_list:
 
 
 import nltk
-# nltk.download('punkt')
+nltk.download('punkt')
 from nltk import word_tokenize
-# nltk.download('stopwords')
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.probability import FreqDist
 
