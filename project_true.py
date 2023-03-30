@@ -14,7 +14,7 @@ from plotly.subplots import make_subplots
 import numpy as np
 import pandas as pd
 
-pars_oblasti = pd.read_csv("https://github.com/LiaStorm/project/blob/8025e6ac73a5a8db4fcc213079d9f52eced676cf/pars_oblasti_RF_clean_true.csv", on_bad_lines='skip')
+pars_oblasti = pd.read_csv("https://github.com/LiaStorm/project/blob/8025e6ac73a5a8db4fcc213079d9f52eced676cf/pars_oblasti_RF_clean_true.csv", sep=',', on_bad_lines='skip')
 
 # df = px.data.gapminder()
 # years = df.year.unique()
