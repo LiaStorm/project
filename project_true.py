@@ -25,6 +25,7 @@ continents =pars_oblasti["OblastiRF"].unique()
 # stylesheet with the .dbc class
 dbc_css = "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates/dbc.min.css"
 app = Dash(__name__, external_stylesheets=[dbc.themes.CYBORG])
+server = app.server
 
 header = html.H4(
     "Проект", className="bg-primary text-white p-2 mb-2 text-center"
