@@ -33,7 +33,6 @@ MarkupSafe==2.1.2
 mdurl==0.1.2
 nltk==3.8.1
 packaging==23.0
-pandas==1.5.3
 patsy==0.5.3
 Pillow==9.4.0
 plotly==5.13.1
